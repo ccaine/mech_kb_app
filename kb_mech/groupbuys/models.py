@@ -3,6 +3,7 @@ from django.db import models
 from django.utils import timezone
 from datetime import datetime
 
+
 class GroupBuy(models.Model):
 
     STATUS_CHOICES = [
@@ -18,6 +19,7 @@ class GroupBuy(models.Model):
         ('KC', 'Keycaps'),
         ('ART', 'Artisan'),
         ('CB', 'Cables'),
+        ('SW', 'Switches'),
     ]
 
     gb_name = models.CharField(max_length=200)
